@@ -1,0 +1,3 @@
+./cb-welcome /usr/bin
+./lib-cb-welcome /usr/lib
+./cb-include.cfg /usr/bin

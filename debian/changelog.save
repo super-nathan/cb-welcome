@@ -1,0 +1,24 @@
+cb-welcome (0.0.3) UNRELEASED; urgency=low
+
+  * Stupid install errors
+
+
+ -- "Super" Nathan Weber <supernathansunshine@gmail.com>  Fri, 21 Dec $
+
+cb-welcome (0.0.3) UNRELEASED; urgency=low
+
+  * Stupid install errors
+
+ -- "Super" Nathan Weber <supernathansunshine@gmail.com>  Fri, 21 Dec 2012 16:24:03 +0900
+
+cb-welcome (0.0.2) unstable; urgency=low
+
+  * Fixed some errors, added the FISH
+
+ --  "Super" Nathan Weber <supernathansunshine@gmail.com>  Mon, 19 Nov 2012 06:57:44 +0000
+
+cb-welcome (0.0.1) unstable; urgency=low
+
+  * Initial release. (Closes: #XXXXXX)
+
+ --  "Super" Nathan Weber <supernathansunshine@gmail.com>  Sat, 17 Nov 2012 04:09:45 +0000

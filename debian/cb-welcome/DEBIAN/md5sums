@@ -1,0 +1,17 @@
+61ecc24e4cc3be0abbaddbafe45f2140  usr/bin/cb-include.cfg
+bdf893601b780a87440f64dee2a936d7  usr/bin/cb-welcome
+8bb38a4ebf77aa98d8a6cff45b70e6e4  usr/lib/lib-cb-welcome/apt-dist-upgrade
+6444e61b1a846102bf7b0ef688745157  usr/lib/lib-cb-welcome/apt-update
+f92bce72a392fb6380011c3975069261  usr/lib/lib-cb-welcome/devel
+e6b00530aaadd477ca32204f700d03f0  usr/lib/lib-cb-welcome/devel-install-lamp-stack
+c72ae10367e894dd872db5bf30b4cb8b  usr/lib/lib-cb-welcome/devel-install-packaging-tools
+47e3cfa6e536d25e9b645662de9c8097  usr/lib/lib-cb-welcome/devel-install-ssh-server
+43d2a0327f678436aba6d532588bc502  usr/lib/lib-cb-welcome/devel-install-version-control-tools
+6999a7041e835d2428eaa8bf1807c678  usr/lib/lib-cb-welcome/fini
+dd586e12ea3b64e530d1ba98b8d29e85  usr/lib/lib-cb-welcome/install-fish
+a23cde4250dd2cb0b86b9aef29910465  usr/lib/lib-cb-welcome/install-java-packages
+79162bcaba2a2c4b5673070d3cf93653  usr/lib/lib-cb-welcome/install-libreoffice
+ef77eacf8581c557b3ac4e7bdf14b217  usr/lib/lib-cb-welcome/install-printer-packages
+7a1d707f66b4f814bcfc2472ba231979  usr/lib/lib-cb-welcome/intro
+02c3dc4c729afe040256d9518f23b9da  usr/share/doc/cb-welcome/changelog.gz
+c067833d59c446e2a79c5a5c7a258430  usr/share/doc/cb-welcome/copyright

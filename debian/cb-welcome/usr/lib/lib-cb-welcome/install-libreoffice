@@ -1,0 +1,23 @@
+clear
+
+echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
+
+  INSTALL LibreOffice
+  -------------------
+  By default, PiBang comes preinstalled with some lightweight Office
+  applications, AbiWord and Gnumeric. Would you like to install the more
+  feature rich office suite, LibreOffice? If you choose to do this, the 
+  following packages will be installed:
+
+      libreoffice libreoffice-gtk
+
+  Note: additional packages listed as dependencies may also be installed.
+
+  Hit any key to install LibreOffice, or \"s\" to skip..."
+
+read -n1 a
+a=`echo $a | tr '[A-Z]' '[a-z]'`
+if [ "$a" != "s" ]; then
+    echo ""
+    sudo apt-get install -y libreoffice libreoffice-gtk
+fi

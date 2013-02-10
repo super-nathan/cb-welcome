@@ -1,0 +1,32 @@
+clear
+
+echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
+
+  INSTALL SPACEFM
+  ------------------
+  Pibang uses Thunar by default. Thunar is very capable and has many many great features.
+  However it is resource intensive. Would you like to install SpaceFM? SpaceFM is a new and 
+  expirimental file manager. If yes the following package will be installed.
+
+      spacefm
+
+  Note: Please check to make sure your menu changes Thunar to SpaceFM. You might have to
+  manually change teh entries.
+
+  For more information see: http://ignorantguru.github.com/spacefm/
+
+  Hit any key to install spacefm, or \"s\" to skip..."
+
+read -n1 a
+a=`echo $a | tr '[A-Z]' '[a-z]'`
+if [ "$a" != "s" ]; then
+    echo ""
+    sudo apt-get install -y spacefm
+fi
+sleep 1s
+if [ -e /usr/bin/spacefm ]; then
+    sed /home/$USER/.config/openbox/menu.xml -i -e "s/thunar/spacefm/"
+    sed /home/$USER/.config/openbox/autostart -i -e "s/thunar --daemon/spacefm --daemon-mode/"
+    sudo aptitude remove -y -q libthunarx-2-0 libtumbler-1-0 thunar thunar-data thunar-volman tumbler tumbler-common
+    openbox --reconfigure
+fi

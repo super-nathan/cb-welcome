@@ -1,0 +1,22 @@
+clear
+
+echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
+
+  INSTALL VERSION CONTROL TOOLS
+  -----------------------------
+  Would you like to install some commonly used version control tools?
+  If you choose to do this, the following packages will be installed:
+
+      git git-gui git-cvs git-svn git-email mercurial
+      subversion subversion-tools bzr bzrtools cvs thunar-vcs-plugin
+
+  Note: additional packages listed as dependencies may also be installed.
+
+  Hit any key to install version control tools, or \"s\" to skip..."
+
+read -n1 a
+a=`echo $a | tr '[A-Z]' '[a-z]'`
+if [ "$a" != "s" ]; then
+    echo ""
+    sudo apt-get install -y git git-gui git-cvs git-svn git-email mercurial subversion subversion-tools bzr bzrtools cvs thunar-vcs-plugin
+fi

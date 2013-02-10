@@ -1,0 +1,27 @@
+clear
+
+echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
+
+  INSTALL FISH
+  -------------------
+  FISH (The Friendly Interactive Shell) is an easy to use, color, coded 
+  shell for the command line. It also has easy to use auto completion. If
+  you are not a heavy shell user and want to make it easier and more 
+  intuitive fish is for you. NOTE: some bash commands are not compatible 
+  with fish, you would need to enter bash by typing (bash).
+  If you want, the following packages will be installed:
+
+      fish
+
+  Note: additional packages listed as dependencies may also be installed.
+
+  Hit any key to install FISH, or \"s\" to skip..."
+
+read -n1 a
+a=`echo $a | tr '[A-Z]' '[a-z]'`
+if [ "$a" != "s" ]; then
+    echo ""
+    sudo apt-get install -y fish &&
+    echo "/usr/local/bin/fish" >> /etc/shells
+    echo "/usr/bin/fish" >> /etc/shells
+fi

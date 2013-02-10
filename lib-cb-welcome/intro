@@ -1,0 +1,33 @@
+clear
+
+echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
+   _   _ _____ _     _     ___  
+  | | | | ____| |   | |   / _ \ 
+  | |_| |  _| | |   | |  | | | |
+  |  _  | |___| |___| |__| |_| |
+  |_| |_|_____|_____|_____\___/ 
+                              
+  Welcome to PiBang Linux! :)
+
+  This is an optional post-installation script, designed to help you configure
+  your new Linux installation and get the most out of PiBang.
+
+  You will now be presented with a series of options. You will need your
+  administrator (sudo) password, so please have it ready. 
+  
+  You will also need to be connected to the internet. A network manager 
+  is available in the system tray. Or, if you prefer, Ceni is available 
+  in the menu under Network.
+
+  If you do not want to run this script now, you can run it at a later date
+  by entering the command \"cb-welcome\" in your terminal. It will not
+  autorun again.
+
+  Hit any key to continue, or \"q\" to quit..."
+
+read -n1 a
+a=`echo $a | tr '[A-Z]' '[a-z]'`
+if [ "$a" = "q" ]; then
+    clear
+    exit 0
+fi

@@ -1,0 +1,10 @@
+Package: cb-welcome
+Version: 0.1.2
+Architecture: all
+Maintainer: "Super" Nathan Weber <supernathansunshine@gmail.com>
+Installed-Size: 53
+Depends: terminator
+Section: misc
+Priority: extra
+Homepage: http://pibang.org/
+Description: Simple program from logging out of Openbox

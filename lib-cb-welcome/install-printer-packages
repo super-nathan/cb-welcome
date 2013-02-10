@@ -1,0 +1,23 @@
+clear
+
+echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
+
+  PRINTER SUPPORT
+  ---------------
+  By default, PiBang does not come with printer support. Would you like
+  to add printer support now? If you choose to do this, the following packages
+  will be installed:
+
+      cups cups-pdf system-config-printer printer-driver-hpijs
+
+  Note: additional packages listed as dependencies may also be installed.
+
+  Hit any key to install printer support, or \"s\" to skip..."
+
+
+read -n1 a
+a=`echo $a | tr '[A-Z]' '[a-z]'`
+if [ "$a" != "s" ]; then
+    echo ""
+    sudo apt-get install -y cups cups-pdf system-config-printer printer-driver-hpijs
+fi

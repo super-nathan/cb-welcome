@@ -1,0 +1,22 @@
+clear
+
+echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
+
+  UPDATE SOFTWARE SOURCES
+  -----------------------
+  Before we can continue, we need to make sure your system's software sources
+  are up-to-date. This script will now execute the command:
+
+      sudo apt-get update
+
+  Hit any key to update your software sources, or \"q\" to quit..."
+
+read -n1 a
+a=`echo $a | tr '[A-Z]' '[a-z]'`
+if [ "$a" = "q" ]; then
+    clear
+    exit 0
+fi
+
+echo ""
+sudo apt-get update

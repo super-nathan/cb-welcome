@@ -1,0 +1,23 @@
+clear
+
+echo "  -----------------------------[ screen $STEPS of $STEPS ]----------------------------
+
+   _____ ___ _   _ ___ ____  _   _ _____ ____  _ 
+  |  ___|_ _| \ | |_ _/ ___|| | | | ____|  _ \| |
+  | |_   | ||  \| || |\___ \| |_| |  _| | | | | |
+  |  _|  | || |\  || | ___) |  _  | |___| |_| |_|
+  |_|   |___|_| \_|___|____/|_| |_|_____|____/(_)
+
+
+  THANK YOU FOR USING PIBANG! :)
+
+  If you have any questions or feedback, please visit us on the web:
+  URL: http://www.pibanglinux.org
+    
+  If you find PiBang useful, please consider helping out.
+
+  Hit any key to exit..."
+
+read -n1 a
+clear
+
