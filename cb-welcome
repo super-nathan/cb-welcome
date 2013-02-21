@@ -71,6 +71,14 @@ STEP=$((STEP+1))
 . $LIBDIR/apt-dist-upgrade
 
 STEP=$((STEP+1))
+. $LIBDIR/choose-shell
+
+if [ "$CHSHELL" != true ]; then
+    . $LIBDIR/choose-bash
+    . $LIBDIR/install-fish
+fi
+
+STEP=$((STEP+1))
 . $LIBDIR/install-printer-packages
 
 STEP=$((STEP+1))
@@ -80,7 +88,7 @@ STEP=$((STEP+1))
 . $LIBDIR/install-libreoffice
 
 STEP=$((STEP+1))
-. $LIBDIR/install-fish
+. $LIBDIR/choose-shell
 
 STEP=$((STEP+1))
 . $LIBDIR/devel-install-ssh-server

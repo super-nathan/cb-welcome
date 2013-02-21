@@ -7,7 +7,7 @@ echo "  -----------------------------[ screen $STEP of $STEPS ]-----------------
   Before we can continue, we need to make sure your system's software sources
   are up-to-date. This script will now execute the command:
 
-      sudo apt-get update
+      sudo aptitude update
 
   Hit any key to update your software sources, or \"q\" to quit..."
 
@@ -19,4 +19,4 @@ if [ "$a" = "q" ]; then
 fi
 
 echo ""
-sudo apt-get update
+sudo aptitude update

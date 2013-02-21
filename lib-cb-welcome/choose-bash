@@ -1,0 +1,19 @@
+clear
+
+echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
+
+  SWITCH BACK TO BASH
+  -------------------
+  If you don't want to use ZSH and prefere the old-school flavor of
+  BASH you can select it here. You can still run ZSH at any time by 
+  typing \"zsh\" into the shell.
+
+
+  Hit any key to revert to BASH, or \"s\" to skip..."
+
+read -n1 a
+a=`echo $a | tr '[A-Z]' '[a-z]'`
+if [ "$a" != "s" ]; then
+    echo ""
+    chsh -s /bin/bash
+fi

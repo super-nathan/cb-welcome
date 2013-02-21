@@ -1,0 +1,22 @@
+clear
+
+echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
+
+  CHOOSE SHELL
+  -------------------
+  The default shell for PiBang is ZSH. ZSH is a highly configurable shell
+  that is very powerful. ZSH has all the functionality of BASH with many 
+  additional features like spell-checking, tab-completion, and pretty 
+  colors. It is recomended you keep this as the default. You can change 
+  back to BASH if you want to roll old-school, or if you want an
+  even easier to use, but not POSIX-complient shell, you can choose 
+  FISH in a future step.
+
+      
+   Hit any key to change shells, or \"s\" to skip to the end..."
+
+read -n1 a
+a=`echo $a | tr '[A-Z]' '[a-z]'`
+if [ "$a" != "s" ]; then
+    CHSHELL=true
+fi

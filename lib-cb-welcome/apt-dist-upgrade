@@ -7,7 +7,7 @@ echo "  -----------------------------[ screen $STEP of $STEPS ]-----------------
   Would you like to update the installed packages on your system?
   If you choose to do this, this script will execute the command:
 
-      sudo apt-get dist-upgrade
+      sudo aptitude full-upgrade
 
   Hit any key to update your system, or \"s\" to skip..."
 
@@ -15,6 +15,6 @@ echo "  -----------------------------[ screen $STEP of $STEPS ]-----------------
 read -n1 a
 a=`echo $a | tr '[A-Z]' '[a-z]'`
 if [ "$a" != "s" ]; then
-    echo ""
-    sudo apt-get dist-upgrade -y
+    echo ""n 
+    sudo aptitude full-upgrade -y
 fi

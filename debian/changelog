@@ -1,8 +1,15 @@
-cb-welcome (0.1.2) UNRELEASED; urgency=low
+cb-welcome (0.1.4) unstable; urgency=low
+
+  * proofreading
+
+ -- "Super" Nathan Weber <supernathansunshine@gmail.com>  Thu, 21 Feb 2013 13:58:44 +0900
+
+cb-welcome (0.1.3) unstable; urgency=low
 
   * Fix Spacefm 
+  * add option to change shells
 
- -- "Super" Nathan Weber <supernathansunshine@gmail.com>  Tue, 25 Dec 2012 20:41:25 +0900
+ -- "Super" Nathan Weber <supernathansunshine@gmail.com>  Thu, 21 Feb 2013 13:58:12 +0900
 
 cb-welcome (0.0.2) unstable; urgency=low
 
