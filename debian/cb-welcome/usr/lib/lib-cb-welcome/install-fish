@@ -24,4 +24,5 @@ if [ "$a" != "s" ]; then
     sudo apt-get install -y fish &&
     echo "/usr/local/bin/fish" >> /etc/shells
     echo "/usr/bin/fish" >> /etc/shells
+    chsh -s /usr/bin/fish
 fi
