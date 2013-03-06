@@ -7,7 +7,7 @@ Standards-Version: 3.9.0
 Homepage: http://pibang.org/
 
 Package: cb-welcome
-Depends: terminator
+Depends: 
 Architecture: all
 Description: Simple program from logging out of Openbox
 
