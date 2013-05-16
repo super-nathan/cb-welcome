@@ -1,3 +1,15 @@
+cb-welcome (0.1.8) unstable; urgency=low
+
+  * fixed some lxterminal conversion issues
+
+ -- "Super" Nathan Weber <supernathansunshine@gmail.com>  Thu, 16 May 2013 14:27:12 +0900
+
+cb-welcome (0.1.7) unstable; urgency=low
+
+  * converting to lxterminal
+
+ -- "Super" Nathan Weber <supernathansunshine@gmail.com>  Mon, 06 May 2013 11:35:37 +0900
+
 cb-welcome (0.1.6) unstable; urgency=low
 
   * removed dependancies for server build

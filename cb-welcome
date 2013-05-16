@@ -19,16 +19,16 @@ if [ "$1" = "--firstrun" ]; then
             fi
             exit 0
         fi
-	if [ -x "/usr/bin/terminator" ];then
-            terminator --title="#! Post-installation Script" --command="cb-welcome"
+	if [ -x "/usr/bin/lxterminal" ];then
+            lxterminal --title="#! Post-installation Script" --command="cb-welcome"
             exit 0
         fi
     fi
 fi
-# Open in terminator
+# Open in lxterminal
 if [ "$1" = "--open" ]; then
-    if [ -x "/usr/bin/terminator" ];then
-        terminator --title="#! Post-installation Script" --command="cb-welcome"
+    if [ -x "/usr/bin/lxterminal" ];then
+        lxterminal --title="#! Post-installation Script" --command="cb-welcome"
         exit 0
     fi
 fi
@@ -100,6 +100,9 @@ fi
 
 STEP=$((STEP+1))
 . $LIBDIR/devel-install-version-control-tools
+
+STEP=$((STEP+1))
+. $LIBDIR/devel-install-lamp-stack
 
 STEP=$((STEP+1))
 . $LIBDIR/devel-install-lamp-stack

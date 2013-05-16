@@ -20,15 +20,15 @@ if [ "$1" = "--firstrun" ]; then
             exit 0
         fi
 	if [ -x "/usr/bin/terminator" ];then
-            terminator --title="#! Post-installation Script" --command="cb-welcome"
+            lxterminal --title="#! Post-installation Script" --command="cb-welcome"
             exit 0
         fi
     fi
 fi
-# Open in terminator
+# Open in lxterminal
 if [ "$1" = "--open" ]; then
-    if [ -x "/usr/bin/terminator" ];then
-        terminator --title="#! Post-installation Script" --command="cb-welcome"
+    if [ -x "/usr/bin/lxterminal" ];then
+        lxterminal --title="#! Post-installation Script" --command="cb-welcome"
         exit 0
     fi
 fi
