@@ -15,5 +15,5 @@ read -n1 a
 a=`echo $a | tr '[A-Z]' '[a-z]'`
 if [ "$a" != "s" ]; then
     echo ""
-    chsh -s /bin/bash
+    chsh -s /bin/bash $USER
 fi

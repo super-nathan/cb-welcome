@@ -15,6 +15,6 @@ echo "  -----------------------------[ screen $STEP of $STEPS ]-----------------
 read -n1 a
 a=`echo $a | tr '[A-Z]' '[a-z]'`
 if [ "$a" != "s" ]; then
-    echo ""n 
+    echo ""
     sudo aptitude full-upgrade -y
 fi

@@ -1,0 +1,21 @@
+clear
+
+echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
+
+  Enable compositing
+  -------------------------
+  Would you like to enable compositing? compositng is a "eye-candy"
+  that will give you real transparency. It looks great but can affect
+  system performance so it is off by default. This option does nothing 
+  in i3, only in Openbox. If you choose to do this, we will uncomment
+  "(sleep 3s && cb-compositor --start) &" in your autostart file.:
+
+  Hit any key to turn compositing on, or \"s\" to skip..."
+
+
+read -n1 a
+a=`echo $a | tr '[A-Z]' '[a-z]'`
+if [ "$a" != "s" ]; then
+    echo ""
+        sed /home/$USER/.config/openbox/autostart -i -e "s/#(sleep 3s && cb-compositor --start) &/(sleep 3s && cb-compositor --start) &/"
+fi
