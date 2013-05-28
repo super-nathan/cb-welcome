@@ -19,7 +19,7 @@ read -n1 a
 a=`echo $a | tr '[A-Z]' '[a-z]'`
 if [ "$a" != "s" ]; then
     echo ""
-    sudo apt-get install -y apache2 mysql-server php5 php-pear php5-gd php5-mysql php5-imagick php5-curl curl phpmyadmin rsync cronolog
+    sudo apt-get install -y apache2 mysql-server php5 php-pear php5-gd php5-mysql php5-imagick php5-curl curl phpmyadmin rsync cronolog molly-guard
 
     #Enable modrewrite - does this work?
     if [ -d /etc/apache2/sites-available ]; then

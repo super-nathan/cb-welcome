@@ -1,11 +1,12 @@
 61ecc24e4cc3be0abbaddbafe45f2140  usr/bin/cb-include.cfg
-f3cd11696bdcb7f5ff5b4aafbdd6f43b  usr/bin/cb-welcome
+1a32e7c3a227606730bfaa6e26b653be  usr/bin/cb-welcome
 78deb947baa8c38b41335e0336d80169  usr/lib/lib-cb-welcome/apt-dist-upgrade
 6b545f4b58e92b2f04ff62adcc945e79  usr/lib/lib-cb-welcome/apt-update
 df4cbb1c1d7c0e1dd763478e74170993  usr/lib/lib-cb-welcome/choose-bash
 8dc7336bb2bf72071d81cd0996f58612  usr/lib/lib-cb-welcome/choose-shell
 f92bce72a392fb6380011c3975069261  usr/lib/lib-cb-welcome/devel
-e6b00530aaadd477ca32204f700d03f0  usr/lib/lib-cb-welcome/devel-install-lamp-stack
+82b8796e2f1e776f5094673e07d2b805  usr/lib/lib-cb-welcome/devel-install-lamp-stack
+82ea57d4260b9dc9790cc4fdec9b05a4  usr/lib/lib-cb-welcome/devel-install-nginx
 c72ae10367e894dd872db5bf30b4cb8b  usr/lib/lib-cb-welcome/devel-install-packaging-tools
 230ed298a6ac642ae61d16f8dcc8fe35  usr/lib/lib-cb-welcome/devel-install-ssh-server
 43d2a0327f678436aba6d532588bc502  usr/lib/lib-cb-welcome/devel-install-version-control-tools
@@ -15,5 +16,5 @@ a23cde4250dd2cb0b86b9aef29910465  usr/lib/lib-cb-welcome/install-java-packages
 79162bcaba2a2c4b5673070d3cf93653  usr/lib/lib-cb-welcome/install-libreoffice
 ef77eacf8581c557b3ac4e7bdf14b217  usr/lib/lib-cb-welcome/install-printer-packages
 7a1d707f66b4f814bcfc2472ba231979  usr/lib/lib-cb-welcome/intro
-39bed384055850d028762fc4baa662c6  usr/share/doc/cb-welcome/changelog.gz
+d9be358c5d84e05553ceae8303680db8  usr/share/doc/cb-welcome/changelog.gz
 c067833d59c446e2a79c5a5c7a258430  usr/share/doc/cb-welcome/copyright
